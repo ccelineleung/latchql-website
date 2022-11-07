@@ -11,4 +11,4 @@ Celine Leung: [Github](https://github.com/ccelineleung) | [LinkedIn]https://www.
 Alex McPhail: [Github](https://github.com/mcphail-alex) | [LinkedIn](www.linkedin.com/in/mcphail-alex)                                                                             
 Johnjered Tolentino: [Github](https://github.com/Johnjeredivant) | [LinkedIn](
 https://www.linkedin.com/in/johnjered-tolentino/
-)        # latchql-website
+)      
