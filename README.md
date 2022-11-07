@@ -12,4 +12,3 @@ Alex McPhail: [Github](https://github.com/mcphail-alex) | [LinkedIn](www.linkedi
 Johnjered Tolentino: [Github](https://github.com/Johnjeredivant) | [LinkedIn](
 https://www.linkedin.com/in/johnjered-tolentino/
 )        # latchql-website
-# latchql-website
