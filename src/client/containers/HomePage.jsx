@@ -182,6 +182,12 @@ const HomePage = () => {
           Depth Limit
           <img className="gif" src="public/banner.jpg" alt="" />
         </div>
+        <div className="text">
+          Rate Limit
+        </div>
+        <div className="text">
+          User Permissions
+        </div>
         <figure className="div-side"></figure>
         <figure className="div-side"></figure>
       </section>
