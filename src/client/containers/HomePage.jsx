@@ -65,141 +65,123 @@ const HomePage = () => {
           </p>
 
           <a href="/docs">
-            <button className="feature-btn">See the Docs</button>
+            <button className="feature-btn">Learn More</button>
           </a>
         </main>
         {/* -------------------- FEATURES -------------------- */}
         <figure className="feature-right-side">
           {/* GUI */}
-          <div className="feature-square">
-            <div className="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={svgSize}
-                height={svgSize}
-                fill="white"
-                className="bi bi-window-split"
-                viewBox="0 0 16 16"
-              >
-                <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1Z"/>
-                <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2Zm12 1a1 1 0 0 1 1 1v2H1V3a1 1 0 0 1 1-1h12ZM1 13V6h6.5v8H2a1 1 0 0 1-1-1Zm7.5 1V6H15v7a1 1 0 0 1-1 1H8.5Z"/>
-              </svg>
-            </div>
-            <p className="features-right-heading">Sandbox Web App</p>
-            <p className="features-text">
-              Graphical user interface (GUI) to be able to connect to a running instance and view query's key metrics
-            </p>
-          </div>
+          <div class = "card">
+                <div class = "image">
+                <img id="latchql-logo" src="public/gui.png" alt="" ></img>
+                </div>
+              <div class = "content">
+                <h2>Sandbox Web App</h2>
+                <br></br>
+               <p>Graphical user interface (GUI) to be able to 
+                connect to a running instance and view query's 
+                key metrics</p>
+              </div>
+           </div>    
           {/* Max Depth Limit */}
           <div className="feature-square">
-            <div className="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={svgSize}
-                height={svgSize}
-                fill="white"
-                className="bi bi-server"
-                viewBox="0 0 16 16"
-              >
-                <path d="M1.333 2.667C1.333 1.194 4.318 0 8 0s6.667 1.194 6.667 2.667V4c0 1.473-2.985 2.667-6.667 2.667S1.333 5.473 1.333 4V2.667z"/>
-                <path d="M1.333 6.334v3C1.333 10.805 4.318 12 8 12s6.667-1.194 6.667-2.667V6.334a6.51 6.51 0 0 1-1.458.79C11.81 7.684 9.967 8 8 8c-1.966 0-3.809-.317-5.208-.876a6.508 6.508 0 0 1-1.458-.79z"/>
-                <path d="M14.667 11.668a6.51 6.51 0 0 1-1.458.789c-1.4.56-3.242.876-5.21.876-1.966 0-3.809-.316-5.208-.876a6.51 6.51 0 0 1-1.458-.79v1.666C1.333 14.806 4.318 16 8 16s6.667-1.194 6.667-2.667v-1.665z"/>
-              </svg>
-            </div>
-            <p className="features-right-heading">Max Depth Limit</p>
-            <p className="features-text">
-            Limiting the complexity of GraphQL queries by their depth protects the server against malicious query attacks that can put the resolvers in a never-ending request loop.
-            </p>
+          <div class = "card">
+                <div class = "image">
+                <img id="latchql-logo" src="public/shield.png" alt="" ></img>
+                </div>
+              <div class = "content">
+                <h2>Max Depth Limit</h2>
+                <br></br>
+               <p>Limiting the complexity of GraphQL queries by their depth protects the server 
+                against malicious query attacks that can put the resolvers in a never-ending request loop.
+              </p>
+              </div>
+           </div>    
           </div>
           {/* Cost Limit */}
           <div className="feature-square">
-            <div className="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={svgSize}
-                height={svgSize}
-                fill="white"
-                className="bi bi-recycle"
-                viewBox="0 0 16 16"
-              >
-                <path d="M9.302 1.256a1.5 1.5 0 0 0-2.604 0l-1.704 2.98a.5.5 0 0 0 .869.497l1.703-2.981a.5.5 0 0 1 .868 0l2.54 4.444-1.256-.337a.5.5 0 1 0-.26.966l2.415.647a.5.5 0 0 0 .613-.353l.647-2.415a.5.5 0 1 0-.966-.259l-.333 1.242-2.532-4.431zM2.973 7.773l-1.255.337a.5.5 0 1 1-.26-.966l2.416-.647a.5.5 0 0 1 .612.353l.647 2.415a.5.5 0 0 1-.966.259l-.333-1.242-2.545 4.454a.5.5 0 0 0 .434.748H5a.5.5 0 0 1 0 1H1.723A1.5 1.5 0 0 1 .421 12.24l2.552-4.467zm10.89 1.463a.5.5 0 1 0-.868.496l1.716 3.004a.5.5 0 0 1-.434.748h-5.57l.647-.646a.5.5 0 1 0-.708-.707l-1.5 1.5a.498.498 0 0 0 0 .707l1.5 1.5a.5.5 0 1 0 .708-.707l-.647-.647h5.57a1.5 1.5 0 0 0 1.302-2.244l-1.716-3.004z"/>
-              </svg>
-            </div>
-
-            <p className="features-right-heading">
-            Cost Limit
-            </p>
-            <p className="features-text">
-            Analyze the queries and applies cost analysis algorithm to prevent resource overload by blocking excessively expensive requests
-            </p>
+          <div class = "card">
+                <div class = "image">
+                <img id="latchql-logo" src="public/loop.png" alt="" ></img>
+                </div>
+              <div class = "content">
+                <h2>Cost Limit</h2>
+                <br></br>
+               <p>Analyze the queries and applies cost analysis algorithm to 
+                prevent resource overload by blocking excessively expensive requests.
+              </p>
+              </div>
+           </div>    
           </div>
           {/* Rate Limiter */}
 
           <div className="feature-square">
-            <div className="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={svgSize}
-                height={svgSize}
-                fill="white"
-                className="bi-shield-shaded"
-                viewBox="0 0 16 16"
-              >
-                <path 
-                fill-rule="evenodd" 
-                d="M8 14.933a.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067v13.866zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
-              </svg>
-            </div>
-            <p className="features-right-heading">
-              Rate Limit
-            </p>
-            <p className="features-text">
-            Mitigate attacks from brute force attacks, DoS and DDoS attacks, and web scraping attacks all while reducing strain on the server.
-            </p>
+          <div class = "card">
+                <div class = "image">
+                <img id="latchql-logo" src="public/attack.png" alt="" ></img>
+                </div>
+              <div class = "content">
+                <h2>Rate Limit</h2>
+                <br></br>
+               <p>Mitigate attacks from brute force attacks, DoS and DDoS attacks, and web scraping 
+                attacks all while reducing strain on the server.
+
+              </p>
+              </div>
+           </div>    
           </div>
           {/* Authorization Limiter */}
 
           <div className="feature-square">
-            <div className="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={svgSize}
-                height={svgSize}
-                fill="white"
-                className="bi bi-person-badge"
-                viewBox="0 0 16 16"
-              >
-                 <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                  <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0h-7zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492V2.5z"/>
-              </svg>
-            </div>
-            <p className="features-right-heading">
-              Authorization Limiter
-            </p>
-            <p className="features-text">
-            Contain identity and permission that tells the server whether the client is authorized for the requested resource using JWT authentication.
-            </p>
+          <div class = "card">
+                <div class = "image">
+                <img id="latchql-logo" src="public/auth.png" alt="" ></img>
+                </div>
+              <div class = "content">
+                <h2>User Permission Levels</h2>
+                <br></br>
+               <p>Contain identity and permission that tells the server whether the 
+                client is authorized for the requested resource using JWT authentication.
+              </p>
+              </div>
+           </div>    
+          </div>
+                             {/* Fragments */}
+      <div className="feature-square">
+          <div class = "card">
+                <div class = "image">
+                <img id="latchql-logo" src="public/frag.png" alt="" ></img>
+                </div>
+              <div class = "content">
+                <h2>Fragments</h2>
+                <br></br>
+               <p>Effectively implement reusable unit of logic that can be shared between multiple queries and mutations
+              </p>
+              </div>
+           </div>    
           </div>
         </figure>
       </section>
-      
-      
-
       {/* -------------------- DEMO -------------------- */}
       <section id="demo">
+        <div class="box1">
         <h1 className="demo">Middleware Demo</h1>
+        </div>
         <main className="div-main"></main>
-        <img className="gif" src="public/banner.jpg" alt="" />
-        <img className="gif" src="public/banner.jpg" alt="" />
-        <figure className="div-side"></figure>
-        <figure className="div-side"></figure>
-      </section>
-
-      <section id="demo">
-        <h1 className="demo">GUI Demo</h1>
-        <main className="div-main"></main>
-        <img className="gif" src="public/banner.jpg" alt="" />
-        <img className="gif" src="public/banner.jpg" alt="" />
+        <div>
+          <img className="gif" src="public/banner.jpg" alt="" />
+        </div>
+        <div>
+          <img className="gif" src="public/banner.jpg" alt="" />
+        </div>
+        <div className="text">
+          Cost Limit
+          <img className="gif" src="public/banner.jpg" alt="" />
+        </div>
+        <div className="text">
+          Depth Limit
+          <img className="gif" src="public/banner.jpg" alt="" />
+        </div>
         <figure className="div-side"></figure>
         <figure className="div-side"></figure>
       </section>

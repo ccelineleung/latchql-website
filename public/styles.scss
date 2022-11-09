@@ -157,6 +157,23 @@ a {
     &#demo {
       flex-direction: column;
       align-items: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      
+      .text {
+        font-size: large;
+        font-weight: 600;
+      }
+
+      .box1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
 
       h1 {
         margin-bottom: 2rem;
@@ -300,7 +317,33 @@ a {
     letter-spacing: 0.1rem;
   }
 
+  .latch-btn2 {
+    border-radius: 1rem;
+    border: none;
+    padding: 1.2rem 2.2rem;
+    background: linear-gradient(
+      to bottom,
+      $main-blue 0%,
+      $gradient-mid-color 95%
+    );
+    color: $white-font;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    box-shadow: 0 0.08rem 0.2rem 0 rgba(0, 0, 0, 0.6);
+    transition: all 0.2s;
+    margin-top: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+  }
+
   .latch-btn:hover {
+    background: $white-font;
+    color: $main-blue;
+    box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+  }
+
+  .latch-btn2:hover {
     background: $white-font;
     color: $main-blue;
     box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.6);
@@ -365,9 +408,10 @@ a {
 
   .feature-right-side {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    column-gap: 4rem;
+    column-gap: 1rem;
+    row-gap: 4rem;
     margin-top: 0.6rem;
   }
 
@@ -477,16 +521,11 @@ footer {
       &.h2 {
         font-size: 1.4rem;
         padding-left: 1rem;
-        // padding-right: -1rem;
       }
-      // &.h3 {
-      //   // font-size: 1rem;
-      // }
     }
   }
 
   &-main {
-    // background-color: rgb(234, 234, 234);
     flex-grow: 1;
     padding: 30px 60px;
     margin-right: 30rem;
@@ -519,7 +558,22 @@ footer {
       text-shadow: #c4c4c4 0 0 2px;
     }
 
-    button:hover {
+    button.docs-heading-ul {
+      cursor: pointer;
+      background-color: #bcbabb;
+    }
+
+    button2 {
+
+      font-size: 1.6rem;
+      background-color: #828282;
+      color: 11ee1e;
+      border: ridge 1px #7b7b7c;
+      border-radius: 5px;
+      text-shadow: #c4c4c4 0 0 ;
+    }
+
+    button2:hover {
       cursor: pointer;
       background-color: #bcbabb;
     }
@@ -623,7 +677,7 @@ footer {
     align-items: center;
   }
   #latchQL-logo {
-    max-width: 75vw;
+    max-width: 50vw;
   }
   #navbar {
     width: 100vw;
@@ -650,7 +704,7 @@ footer {
       }
     }
   }
-
+  
   #latch {
     flex-direction: column;
     margin: 0px;
@@ -658,6 +712,9 @@ footer {
 
     .latch-btn {
       margin-left: 2rem;
+    }
+    .latch-btn2 {
+      margin-left: 0rem;
     }
 
     svg {
@@ -694,4 +751,69 @@ footer {
   #docs-sidebar {
     display: none;
   }
+}
+
+.card {
+  position: relative;
+  width : 20rem;
+  height : 15rem;  
+  background: $main-blue;
+    background: linear-gradient(
+      to bottom,
+      $main-blue 0%,
+      $gradient-mid-color 95%
+    );
+  padding : 20px 15px;
+  
+  display : flex;
+  flex-direction : column;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+  transition : 0.3s ease-in-out;
+  border-radius : 15px;
+}
+.card:hover {
+  height : 265px;    
+}
+
+.card .image {
+  position : relative;
+  width : 15rem;
+  height : 15rem;
+  border-radius: 15px;
+  background: $main-blue;
+    background: linear-gradient(
+      to bottom,
+      $main-blue 0%,
+      $gradient-mid-color 95%
+    );
+  top : -40%;
+  left: 8px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
+
+ .card .image img {
+  max-width : 100%;
+  border-radius : 0px;
+}
+
+ .card .content {
+  position : relative;
+  top : -120px;
+  padding : 5px 5px;
+  color : white;
+  text-align : center;
+  font-size: small;
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
+    
+}
+
+ .card:hover .content {
+   margin-top : 40px;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s;
+  
 }
