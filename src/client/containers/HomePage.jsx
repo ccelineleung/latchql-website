@@ -165,7 +165,7 @@ const HomePage = () => {
       {/* -------------------- DEMO -------------------- */}
       <section id="demo">
         <div class="box1">
-        <h1 className="demo">Middleware Demo</h1>
+        <h1 className="demo">Demo</h1>
         </div>
         <main className="div-main"></main>
         <div>
